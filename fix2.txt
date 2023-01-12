@@ -1,0 +1,58 @@
+1.
+git init
+git checkout -b main
+
+2.
+New-Item README.md
+
+3.
+git add README.md
+git commit -m "Initial commit"
+
+4.
+git switch -c feature1
+
+5.
+git commit -a -m "Add dog and change moose to mouse in README.md"
+
+6.
+git switch main
+git commit -a -m "Change moose to mouse in README.md"
+
+7.
+git merge feature1
+git commit -a -m "Fix merge conflict"
+
+8.
+git tag extinct
+
+9.
+git reset main^ --hard
+
+10.
+git branch feature2
+
+11.
+git commit -a -m "Fix uppercase"
+
+12.
+git switch feature2
+New-Item fix1.txt
+git add fix1.txt
+git commit -m "Add fix1.txt"
+New Item fix2.txt
+git add fix2.txt
+git commit -m "Add fix2.txt"
+
+13.
+git switch main
+ls
+
+14.
+git reflog
+git cherry-pick 61a3 (git cherry-pick feature2)
+
+15.
+git commit -a -m "Add information in fix2.txt"
+
+
