@@ -55,4 +55,12 @@ git cherry-pick 61a3 (git cherry-pick feature2)
 15.
 git commit -a -m "Add information in fix2.txt"
 
+16.
+git remote add origin https://github.com/figgge/GitLaboration.git
+git branch -M main
+git push -u origin main
+git commit -a -m "Add additional information to fix2.txt"
+git push
+
+
 
