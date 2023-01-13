@@ -62,5 +62,41 @@ git push -u origin main
 git commit -a -m "Add additional information to fix2.txt"
 git push
 
+17.
+git add .gitignore
+git commit -m "Add gitignore"
+git push
+
+18.
+git tag v1.0 .m "Version 1.0"
+
+19. 
+git rebase -i HEAD~3
+(squash)
+
+20.
+git switch -c feature3
+git stash
+git switch feature1
+git push --set-upstream origin feature1
+git switch feature2
+git push --set-upstream origin feature2
+git switch feature3
+git stash pop
+git commit -a -m "Add 17-20 to fix2.txt"
+git switch main
+git merge feature3
+git reset --hard HEAD~
+git switch feature3
+git add .
+git commit --amend --no-edit
+git switch main
+git merge feature3
+git push --force
+
+
+
+
+
 
 
